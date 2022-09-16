@@ -16,7 +16,7 @@
   <body>
     <div class="left_side" style="float:left"> 
         <h2>Albums</h2>
-        <ol>
+        <ol class="album_list">
           <li>Nirvana-Nevermind</li>
           <li>AC/DC-Back in Black</li>
           <li>XJapan-Blue Blood</li>
@@ -30,6 +30,9 @@
             margin: 1rem;
             padding: 1.5rem;
           }
+          .album_list{
+          background-color: rgba(88, 187, 187, 0.8);
+        }
         </style>  
     </div>
     <div class="right_side" style="margin-left: 50%" style="margin-right: 30%;">
@@ -39,7 +42,7 @@
         <img src="mochi.png" alt="PNG image">
         <img src="mochi.svg" alt="SVG image">   
   
-      <ol class="list">
+      <ol>
         <li>GIF file is good for simple animations</li>
         <li>JPG file is good for photos</li>
         <li>PNG file is good for diagrams and icons</li>
@@ -52,9 +55,6 @@
           margin: 1rem;
           padding-right: 30px;
           align-items: center;
-        }
-        .list{
-          background-color: rgba(88, 187, 187, 0.8);
         }
       </style>
     </div>
