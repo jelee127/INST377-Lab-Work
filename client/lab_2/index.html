@@ -7,14 +7,14 @@
     <div class="title">
       <h2>Jaeeun Lee's Labs for INST377</h2>
       <style>
-        title{
+        .title{
           background-color: bisque;
         }
       </style>
     </div>  
   </head>
   <body>
-    <div class="left_side" style="float: left;"> 
+    <div class="left_side" style="margin-left: 10%;"> 
         <h2>Albums</h2>
         <ol>
           <li>Nirvana-Nevermind</li>
@@ -29,11 +29,10 @@
             flex: 0 1 auto;
             margin: 1rem;
             padding: 1.5rem;
-
           }
         </style>  
     </div>
-    <div style="margin-left: 50%;">
+    <div class="right_side" style="margin-left: 50%;">
       <h2>Image Carousel</h2>
         <img src="mochi.gif" alt="GIF image">
         <img src="mochi.jpg" alt="JPG image">
@@ -47,10 +46,18 @@
         <li>PNG file is good for diagrams and icons</li>
         <li>SVG is a vector-based graphics format.</li>
       </ol>
+      <style>
+        .right_side{
+          background-color: rgba(241, 233, 116, 0.8);
+          flex: 1 2 auto;
+          margin: 1rem;
+          align-items: center;
+        }
+      </style>
     </div>
   
   
-  <footer class="selector">
+  <footer class="footer">
     jelee127: <a href="https://github.com/jelee127">Github Account</a>
   
   <style>
