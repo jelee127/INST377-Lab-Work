@@ -1,5 +1,98 @@
-<!--
-    Replace this with your working code from Lab 2, and include:
-    - The styles in this folder's `style.css`
-    - The script in script.js, which should be included via a `<script src="script.js" >` call before your closing </body> tag 
--->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset='UTF-8'/>
+    <title>INST377 Lab1 Jaeeun_Lee 116334600</title>
+    <link rel='stylesheet' href='styles.css'/>
+    <style>
+      .pj_title{
+        background-color: rgb(247, 234, 162);
+        padding-top: 2mm;
+        padding-bottom: 2mm;
+      }
+      .album_title{
+        margin-top: 1mm;
+        margin-left: 1mm;
+      }
+      .left_side{
+        background-color:rgba(0, 139, 138, 0.8);
+        border: 1px dashed;
+        margin-top: 1cm;
+        margin-left: 2cm;
+        padding-left: 5mm;
+        padding-right: 5mm;
+        padding-bottom: 5mm;
+        padding-top: 1mm;
+      }
+      .album_list{
+        background-color: rgba(88, 187, 187, 0.8);
+        margin-left: 1%;
+        border: 1px dashed;
+      }
+      .image_title{
+        margin-top: 2mm;
+      }
+      .images{
+        align-items: center;
+        margin-left: 1cm;
+        margin-top: 1cm;
+      }
+      .right_side{
+        background-color: rgba(241, 233, 116, 0.8);
+        margin-right: 12cm;
+        margin-top: 1cm;
+        margin-bottom: 3cm;
+        padding-left: 1cm;
+        padding-right: 1cm;
+        padding-bottom: 5mm;
+        padding-top: 5mm;
+        border: 1px dashed;
+      }
+      .explain{
+        background-color: rgb(247, 234, 162);
+        border: 1px dashed;
+        margin-left: 10px;
+      }
+      .footer{
+        background-color:rgba(0, 139, 138, 0.8);
+        margin-bottom: 0%;
+        padding-top: 2mm;
+        padding-bottom: 2mm;
+      }
+    </style>  
+  </head>
+  <body>
+    <script src="script.js" ></script>
+    <div class="pj_title">
+      <strong>Jaeeun Lee's Labs for INST377</strong>
+    </div>
+    <div class="left_side" style="float:left"> 
+        <h3 class="ablum_title">Albums Names</h3>
+        <ol class="album_list">
+          <li>Nirvana-Nevermind</li>
+          <li>AC/DC-Back in Black</li>
+          <li>XJapan-Blue Blood</li>
+          <li>Muse-Absolution</li>
+          <li>My Chemical Romance-The Black Parade</li>
+        </ol>  
+    </div>
+    <div class="right_side" style="margin-left: 35%">
+      <h3 class="image_title">Image Carousel</h3>
+        <div class="images">
+          <img src="mochi.gif" alt="GIF image">
+          <img src="mochi.jpg" alt="JPG image">
+          <img src="mochi.png" alt="PNG image">
+          <img src="mochi.svg" alt="SVG image" width="150" height="150">   
+        </div>
+      <ol class="explain">
+        <li>GIF file is good for simple animations</li>
+        <li>JPG file is good for photos</li>
+        <li>PNG file is good for diagrams and icons</li>
+        <li>SVG is a vector-based graphics format.</li>
+      </ol>
+    </div>
+    <footer class="footer">
+      <strong>jelee127: </strong><a href="https://github.com/jelee127">Github Account</a>
+    </footer>
+  </body>
+</html>
