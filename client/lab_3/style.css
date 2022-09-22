@@ -74,10 +74,10 @@ form {
 }
 
 .header {
-  padding-top: 1rem;
+  padding-top: 0.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  padding-bottom: 1.5rem;
+  padding-bottom: 1rem;
 }
 
 
@@ -97,8 +97,8 @@ form {
 
   /* shapes */
   border-radius: 6px;
-  font-size: 1.5rem;
-  padding: 1.25rem;
+  font-size: 1rem;
+  padding: 1rem;
   margin:0; /* removing the margin on h1 tags means the header pins to the top if we move */
 
 
@@ -141,6 +141,8 @@ form {
   margin: 1rem;
   align-items: center;
   max-width: 450px;
+  padding: 1.5rem;
+  border: 2px dashed;
 }
 
 /*
@@ -151,9 +153,9 @@ form {
 
 .footer {
   flex-shrink: 0;
-  padding: 1rem;
+  padding: 0.6rem;
   background-color: rgba(0, 139, 139, 0.8);
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 600;
 }
 
