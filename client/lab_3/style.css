@@ -120,7 +120,6 @@ form {
   background-color: rgba(239, 239, 239, 0.40);
   border: 2px dashed;
   border-radius: 4px;
-
   width: fit-content;
   height:fit-content;
   padding: 1.5rem;
@@ -132,7 +131,8 @@ form {
   flex: 0 1 auto;
   margin: 1rem;
   padding: 1.5rem;
-  border: 1px dashed;
+  border: 2px dashed;
+  width: 20cm;
 }
 
 .right_section {
