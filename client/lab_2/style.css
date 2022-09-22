@@ -74,10 +74,10 @@ form {
 }
 
 .header {
-  padding-top: 1rem;
+  padding-top: 0.7rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  padding-bottom: 1.5rem;
+  padding-bottom: 1.2rem;
 }
 
 
@@ -152,9 +152,9 @@ form {
 
 .footer {
   flex-shrink: 0;
-  padding: 1rem;
+  padding: 0.7rem;
   background-color: rgba(0, 139, 139, 0.8);
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 600;
 }
 
