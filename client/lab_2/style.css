@@ -142,7 +142,8 @@ form {
   align-items: center;
   max-width: 450px;
   border: 2px dashed;
-  padding-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  padding-top: 2rem;
 }
 
 /*
