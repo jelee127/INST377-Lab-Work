@@ -142,6 +142,7 @@ form {
   align-items: center;
   max-width: 450px;
   border: 2px dashed;
+  padding-bottom: 0.5rem;
 }
 
 /*
@@ -152,10 +153,13 @@ form {
 
 .footer {
   flex-shrink: 0;
-  padding: 0.7rem;
+  padding: 0.6rem;
   background-color: rgba(0, 139, 139, 0.8);
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 600;
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
 }
 
 .footer a {
