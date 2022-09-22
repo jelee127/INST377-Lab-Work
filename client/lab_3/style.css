@@ -66,7 +66,7 @@ form {
 }
 
 .container {
-  margin: 0 8px;
+  margin: 0 20px;
   display: flex;
   justify-content: space-evenly;
   align-items: start;
