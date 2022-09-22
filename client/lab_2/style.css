@@ -74,10 +74,10 @@ form {
 }
 
 .header {
-  padding-top: 0.7rem;
+  padding-top: 0.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  padding-bottom: 1.2rem;
+  padding-bottom: 1rem;
 }
 
 
@@ -142,7 +142,7 @@ form {
   align-items: center;
   max-width: 450px;
   border: 2px dashed;
-  padding-bottom: 0.5rem;
+  padding-bottom: 1.2rem;
 }
 
 /*
