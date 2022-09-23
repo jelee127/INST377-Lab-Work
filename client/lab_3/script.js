@@ -40,7 +40,7 @@ function moveToNextSlide() {
     and if so, sets your slidePosition to the first index of an array
     if not, set the slidePosition to the current position plus one
   */
-  if (slidePosition === totalSlides-1){
+  if (slidePosition === totalSlides){
     slidePosition = 0;
   }
   else{
@@ -57,7 +57,7 @@ function moveToPrevSlide() {
     if not, set the slidePosition to the current position minus one
   */
   if (slidePosition === 0){
-      lidePosition = totalSlides - 1;
+      slidePosition = totalSlides - 1;
   }
   else{
     slidePosition--;
@@ -70,13 +70,13 @@ function moveToPrevSlide() {
   to the elements accessed by the "querySelector" set to the class name on each
 */
 document.querySelector('.next') // Get the appropriate element (<button class="next">)
-  .addEventListener('click', () => { // set an event listener on it - when it's clicked, do this callback function
+  .addEventListener('click', function() => { // set an event listener on it - when it's clicked, do this callback function
     console.log('clicked next'); // let's tell the client console we made it to this point in the script
     moveToNextSlide(); // call the function above to handle this
   });
 
 document.querySelector('.prev')
-  .addEventListener('click', () => {
+  .addEventListener('click', function() => {
     console.log('clicked prev');
     moveToPrevSlide();
   });
