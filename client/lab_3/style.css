@@ -282,7 +282,7 @@ form {
   position: absolute;
   top: 40%;
   transform: translateY(-50%);
-  margin-left: 2%;
+  margin-left: 1%;
 }
 
 .carousel .carousel__actions button{
