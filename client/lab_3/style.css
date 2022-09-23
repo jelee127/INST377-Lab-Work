@@ -261,12 +261,13 @@ div.carousel {
   line-height: 10px; /* This centers a button's text! */
   border: 2px solid rgb(99,99,99); /* shorthand for how to do a border */
 }
-
+/*
 .carousel .carousel_actions button{
   border-radius: 5px;
   border: none; 
   font-weight: bold;
 }
+*/
 
 .prev:focus,
 .next:focus {
