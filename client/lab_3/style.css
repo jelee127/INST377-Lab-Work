@@ -249,7 +249,7 @@ div.carousel {
 
 .carousel .carousel_actions {
   display: flex;
-  width: 100%;
+  width: 30%;
   justify-content: space-between;
   position:absolute;
   margin: -10%;
@@ -275,5 +275,5 @@ div.carousel {
 
 .carousel .carousel_actions:hover {
   /* Pick a good background colour for your hover pseudoclass */
-  background-color: rgb(19, 83, 3);
+
 }
