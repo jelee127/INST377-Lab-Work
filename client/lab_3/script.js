@@ -27,11 +27,11 @@ function updateSlidePosition() {
   // outside your .forEach,
   // add a 'visible' class to the slide at the current slidePosition in slides
   for(let slide of slides){
-    slide.classList.remove('visible');
-    slide.classList.add('hidden');
+    slide.classList.remove("visible");
+    slide.classList.add("hidden");
   }
 
-  slides[slidePosition].classList.add('visible');
+  slides[slidePosition].classList.add("visible");
 }
 
 function moveToNextSlide() {
