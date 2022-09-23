@@ -249,6 +249,7 @@ div.carousel {
 
 .carousel .carousel_actions {
   display: flex;
+  width: 100%;
   justify-content: space-between;
   position:absolute;
   /*border: none;*/
