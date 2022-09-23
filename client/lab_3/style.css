@@ -190,8 +190,8 @@ form {
   display: flex;
   justify-content: space-evenly;
   flex-flow: wrap;
-  width: 350px;
-  height: 350px;
+  width: 150px;
+  height: 150px;
   margin: 0 auto;
 }
 
@@ -244,12 +244,13 @@ div.carousel {
     - ... there's a reason crop tools are popular in image editors
    */
   width: 150px; 
+  height: 150px;
 }
 
 .prev,
 .next {
   border: none;
-  margin: 2px;
+  margin: -10%;
   text-align: center;
   border-radius: 5px;
   font-weight: bold;
