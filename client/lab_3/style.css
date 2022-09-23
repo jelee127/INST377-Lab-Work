@@ -141,6 +141,7 @@ form {
   margin: 1rem;
   align-items: center;
   max-width: 450px;
+  border: 2px dashed;
 }
 
 /*
@@ -250,7 +251,7 @@ div.carousel {
 .prev,
 .next {
   border: none;
-  margin: -10%;
+  margin: 2px;
   text-align: center;
   border-radius: 5px;
   font-weight: bold;
