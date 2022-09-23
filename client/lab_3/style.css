@@ -211,7 +211,6 @@ div.carousel {
   justify-content: space-between;
   margin: 0 auto;
   margin-bottom: 1rem;
-  position: relative;
 }
 
 .carousel .slides {
