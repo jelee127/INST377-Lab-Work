@@ -232,16 +232,16 @@ form {
 }
 */
 
-.carousel .carousel_item,
-.carousel .carousel_item--hidden{
+.carousel .carousel__item,
+.carousel .carousel__item--hidden{
   display: none;
 }
 
-.carousel .carousel_item--visible {
+.carousel .carousel__item--visible {
   display: block;
 }
 
-.carousel .carousel_item img {
+.carousel .carousel__item img {
   /* 
     Setting width, rather than max-width or min-width,
     means annoying pop-ins won't happen
@@ -275,7 +275,7 @@ form {
   border: 2px solid rgb(99,99,99); /* shorthand for how to do a border 
 }
 */
-.carousel .carousel_actions{
+.carousel .carousel__actions{
   display: flex;
   width: 18%;
   justify-content: space-between;
