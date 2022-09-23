@@ -74,7 +74,7 @@ form {
 }
 
 .header {
-  padding-top: 0.5rem;
+  padding-top: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-bottom: 1rem;
@@ -97,8 +97,8 @@ form {
 
   /* shapes */
   border-radius: 6px;
-  font-size: 1rem;
-  padding: 1rem;
+  font-size: 1.5rem;
+  padding: 1.25rem;
   margin:0; /* removing the margin on h1 tags means the header pins to the top if we move */
 
 
@@ -141,8 +141,6 @@ form {
   margin: 1rem;
   align-items: center;
   max-width: 450px;
-  padding: 1.5rem;
-  border: 2px dashed;
 }
 
 /*
@@ -157,6 +155,9 @@ form {
   background-color: rgba(0, 139, 139, 0.8);
   font-size: 1rem;
   font-weight: 600;
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
 }
 
 .footer a {
@@ -222,12 +223,11 @@ div.carousel {
 }
 
 /* .carousel_item, */
-.carousel .carousel_item,
-.carousel .carousel_item--hidden {
+.hidden {
   display: none;
 }
 
-.carousel .carousel_item--visible {
+.visible {
   display: block;
 }
 
@@ -243,37 +243,29 @@ div.carousel {
     - now make sure that images are _always_ square
     - ... there's a reason crop tools are popular in image editors
    */
-  width: 150px;
-  height: 150px; 
+  width: 150px; 
 }
 
-.carousel .carousel_actions {
-  display: flex;
-  width: 30.5%;
-  justify-content: space-between;
-  position:absolute;
-  margin: -10%;
-  
-  /*
+.prev,
+.next {
   border: none;
-  margin: 20px;
+  margin: 2px;
   text-align: center;
   border-radius: 5px;
   font-weight: bold;
   height: 45px;
   padding: 10px;
-  line-height: 10px; /* This centers a button's text! 
-  border: 2px solid rgb(99,99,99); /* shorthand for how to do a border 
-  background-color: rgb(99,99,99);
-  */
+  line-height: 0; /* This centers a button's text! */
+  border: 2px solid rgb(99,99,99); /* shorthand for how to do a border */
 }
 
-.carousel .carousel_actions:focus {
-  margin: 5px;
+.prev:focus,
+.next:focus {
+  margin: 0;
   /* Pick a good border colour and check out how it works with your buttons */
 }
 
-.carousel .carousel_actions:hover {
+.prev:hover,
+.next:hover {
   /* Pick a good background colour for your hover pseudoclass */
-
 }
