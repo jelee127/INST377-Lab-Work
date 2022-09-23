@@ -248,6 +248,9 @@ div.carousel {
 
 .prev,
 .next {
+  display: flex;
+  justify-content: space-between;
+  position:absolute;
   border: none;
   margin: 2px;
   text-align: center;
