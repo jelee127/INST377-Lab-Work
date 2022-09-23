@@ -99,7 +99,8 @@ form {
 
   width: fit-content;
   height:fit-content;
-  padding: 1.5rem;
+  padding: 1rem;
+  padding-left: 1.5rem;
   margin: 0 auto;
   font-weight: bold;
   
@@ -119,7 +120,7 @@ form {
   margin: 1rem;
   align-items: center;
   max-width: 450px;
-  height: 630px;
+  height: 580px;
   border: 2px dashed;
   padding-top: 20px;
 }
@@ -205,10 +206,10 @@ form {
 
 .carousel .carousel__actions{
   display: flex;
-  width: 16%;
+  width: 21%;
   justify-content: space-between;
   position: absolute;
-  top: 40%;
+  top: 50%;
   transform: translateY(-50%);
   margin-left: 1%;
   border: 2px #4a4a4a;
