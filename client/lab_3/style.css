@@ -271,10 +271,10 @@ div.carousel {
 }
 
 .carousel .carousel_actions button#prev{
-  margin-left: 20px;
+  margin-left: 2px;
 }
 .carousel .carousel_actions button#next{
-  margin-right: 20px;
+  margin-right: 2px;
 }
 
 .carousel .carousel_actions:focus {
