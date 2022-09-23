@@ -191,8 +191,8 @@ form {
   display: flex;
   justify-content: space-evenly;
   flex-flow: wrap;
-  width: 150px;
-  height: 150px;
+  width: 350px;
+  height: 350px;
   margin: 0 auto;
 }
 
@@ -257,7 +257,7 @@ div.carousel {
   font-weight: bold;
   height: 45px;
   padding: 10px;
-  line-height: 0; /* This centers a button's text! */
+  line-height: 10%; /* This centers a button's text! */
   border: 2px solid rgb(99,99,99); /* shorthand for how to do a border */
 }
 
