@@ -262,7 +262,12 @@ div.carousel {
   border: 2px solid rgb(99,99,99); /* shorthand for how to do a border */
   background-color: rgb(99,99,99);
 }
-
+#prev {
+  margin-left: 0%;
+}
+#next {
+  margin-left: 100%;
+}
 .carousel .carousel_actions:focus {
   margin: 5px;
   /* Pick a good border colour and check out how it works with your buttons */
