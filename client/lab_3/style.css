@@ -257,7 +257,7 @@ form {
   max-height: 300px;
   width: 80%;
   height: auto;
-  margin-left: 38%;
+  margin-left: 45%;
 }
 
 /*
@@ -280,8 +280,9 @@ form {
   width: 20%;
   justify-content: space-between;
   position: absolute;
-  top: 60%;
+  top: 30%;
   transform: translateY(-50%);
+  margin-left: 10%;
 }
 
 .carousel .carousel__actions button{
