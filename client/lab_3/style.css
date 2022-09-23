@@ -258,10 +258,10 @@ div.carousel {
   /*border-radius: 5px;*/
   /*font-weight: bold;*/
   height: 45px;
-  padding: 10px;
+  /*padding: 10px;*/
   line-height: 10px; /* This centers a button's text! */
-  /*border: 2px solid rgb(99,99,99); /* shorthand for how to do a border */
-  background-color: rgb(122, 230, 122);
+  border: 2px solid rgb(99,99,99); /* shorthand for how to do a border */
+  
 }
 
 .carousel .carousel_actions button{
