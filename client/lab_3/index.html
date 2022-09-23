@@ -32,31 +32,15 @@
 
           <h2 class="subtitle">Image Carousel</h2>    
         
-            <div class="carousel">
-                <div class="carousel_item carousel_item--visible">
-                  <img src="phone1.jpeg" />
-                  <div class="box">
-                  </div>
-                </div>
-
-                <div class="carousel_item">
-                  <img src="phone2.png" />
-                </div>
-
-                <div class="carousel_item">
-                  <img src="phone3.jpeg" />
-                </div>
-
-                <div class="carousel_item carousel_item--hidden">
-                  <img src="phone4.png" />
-                </div>
-              
-
-              <div class="carousel_actions">
-                <button id="prev">Prev</button>
-                <button id="next">Next</button>
-              </div>
-
+            <div id="carousel" class="carousel">
+              <button class="prev"></button>
+                <ul>
+                  <li><img src="phone1.jpeg"></li>
+                  <li><img src="phone2.png"></li>
+                  <li><img src="phone3.jpeg"></li>
+                  <li><img src="phone4.png"></li>
+                </ul>
+              <button class="next"></button>
             </div>
           
         </div>
