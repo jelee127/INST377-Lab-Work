@@ -249,8 +249,12 @@ div.carousel {
 
 .carousel .carousel_actions {
   display: flex;
+  width: 100%;
   justify-content: space-between;
   position:absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  /*
   border: none;
   margin: 20px;
   text-align: center;
@@ -258,9 +262,10 @@ div.carousel {
   font-weight: bold;
   height: 45px;
   padding: 10px;
-  line-height: 10px; /* This centers a button's text! */
-  border: 2px solid rgb(99,99,99); /* shorthand for how to do a border */
+  line-height: 10px; /* This centers a button's text! 
+  border: 2px solid rgb(99,99,99); /* shorthand for how to do a border 
   background-color: rgb(99,99,99);
+  */
 }
 
 .carousel .carousel_actions:focus {
