@@ -205,6 +205,7 @@ form {
 /* Carousel */
 div.carousel {
   max-width: 350px;
+  max-height: 300px;
   overflow: hidden;
   text-align: center;
   display: flex;
