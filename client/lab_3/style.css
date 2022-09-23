@@ -246,8 +246,8 @@ div.carousel {
   height: 150px; 
 }
 
-.carousel .prev,
-.carousel .next {
+
+.carousel .crousel_actions{
   border: none;
   margin: 2px;
   text-align: center;
@@ -255,7 +255,7 @@ div.carousel {
   font-weight: bold;
   height: 45px;
   padding: 10px;
-  line-height: 10px; /* This centers a button's text! */
+  line-height: 0px; /* This centers a button's text! */
   border: 2px solid rgb(99,99,99); /* shorthand for how to do a border */
 }
 
