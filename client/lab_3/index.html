@@ -4,7 +4,6 @@
   <head>
     <meta charset='UTF-8'/>
     <link rel='stylesheet' href='style.css'/>
-    <script src="script.js" ></script>
     <title>INST377 Lab3 Jaeeun_Lee 116334600</title>  
   </head>
   
@@ -28,22 +27,27 @@
       
 
       <div class="right_section">
-        <h2 class="subtitle">Image Carousel</h2>     
-          <div class="div.carousel">
+        <h2 class="subtitle">Image Carousel</h2>    
+
+          <div class="carousel">
             <div class="grid">
-              <div class="carousel_item"></div>
-                <img src="phone1.jpeg" alt="">
-                <img src="phone2.png" alt="">
-                <img src="phone3.jpeg" alt="">
-                <img src="phone4.png" alt="">
+              <div class="carousel_item visible">
+                <img src="phone1.jpeg" />
+              </div>
+              <div class="carousel_item">
+                <img src="phone2.png" />
+              </div>
+              <div class="carousel_item">
+                <img src="phone3.jpeg" />
+              </div>
+              <div class="carousel_item hidden">
+                <img src="phone4.png" />
               </div>
             </div>  
 
-            <div class="prev">
-              <button>Prev</button>
-            </div>
-            <div class="next">
-              <button>Next</button>
+            <div class="carousel_actions">
+              <button id="prev">Prev</button>
+              <button id="next">Next</button>
             </div>
 
           </div>
@@ -55,5 +59,7 @@
       <a href="https://github.com/jelee127">Github Account</a>
     </footer>
   </div>
+
+  <script src="script.js" ></script>
   </body>
 </html>
