@@ -2,10 +2,6 @@
   box-sizing: border-box;
 }
 
-/* 
-  These rules apply to actual HTML elements with no labelling!
-  So: they style the tags directly
-*/
 
 html {
   background-color: #fff;
@@ -49,12 +45,6 @@ form {
   accent-color: hsla(120, 100%, 50%, 0.482);
 }
 
-/*
-  - These styles use 'class names'
-  - You can apply them by using the 'class' attribute on your HTML
-  - like this: <div class="wrapper">
-  - note that the period vanishes there!
-*/
 
 
 .wrapper {
@@ -81,12 +71,6 @@ form {
 }
 
 
-/*
-  This rule implies that the H1 tag lives within another HTML tag
-  It "inherits" some rules from the above
-  Those rules won't apply to an h1 that's outside a block with the class of 'header'
-*/
-
 .header h1 {
   display: block;
   /* this will push other blocks out of the way */
@@ -107,16 +91,8 @@ form {
 }
 
 
-/*
-  Rules can be combined on a block to apply the 'cascade' in order
-  So you can use two classnames in a single class attribute
-  like: <div class="box section">
 
-  Rules may combine in unexpected ways - remember that the LAST thing written in this file will have "priority"
-  And will be what displays in your client
-*/
-
-.box {
+.box{
   background-color: rgba(239, 239, 239, 0.40);
   border: 2px dashed;
   border-radius: 4px;
@@ -125,6 +101,8 @@ form {
   height:fit-content;
   padding: 1.5rem;
   margin: 0 auto;
+  font-weight: bold;
+  
 }
 
 .left_section {
@@ -141,15 +119,12 @@ form {
   margin: 1rem;
   align-items: center;
   max-width: 450px;
+  height: 630px;
   border: 2px dashed;
-  height: 500px;
+  padding-top: 20px;
 }
 
-/*
-  This block is actually dependent on the "container" block having a flex set on it
-  and the "wrapper" block displaying as a flex column with a "vertical height" (vh) of 100.
-  That serves to cram the footer to the bottom of the page.
-*/
+
 
 .footer {
   flex-shrink: 0;
@@ -167,11 +142,6 @@ form {
   text-decoration: underline;
 }
 
-/*
-  This is an example of a 'pseudoclass'
-  In this instance, it says what to do if a mouse hovers over a link
-  This is pretty desktop-specific, since there's no hover function on touchscreens
-*/
 .footer a:hover {
   /* Hue, saturation, luminosity, alpha */
   background-color: hsla(0, 0%, 90%, 0.15);
@@ -182,7 +152,7 @@ form {
 
 .subtitle {
   color: rgba(0, 0, 0, 0.8);
-  margin: 0px;
+  
   margin-bottom: 5px;
 }
 
@@ -202,9 +172,6 @@ form {
   height: 150px;
 }
 
-
-/* Carousel */
-/* .div */
 .carousel {
   max-width: 350px;
   overflow: hidden;
@@ -217,21 +184,6 @@ form {
   margin-bottom: 1rem;
 }
 
-/*
-.carousel .slides {
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-}
-*/
-/* .carousel_item, */
-/*
-.carousel_item .hidden {
-  display: none;
-}
-*/
 
 .carousel .carousel__item,
 .carousel .carousel__item--hidden{
@@ -243,47 +195,23 @@ form {
 }
 
 .carousel .carousel__item img {
-  /* 
-    Setting width, rather than max-width or min-width,
-    means annoying pop-ins won't happen
-    but it also means you need to format your images to be compatible
-    or they will stretch weird
-
-    - try a tall one and see what happens
-    - change the height on a fixed image size and see what happens
-    - now make sure that images are _always_ square
-    - ... there's a reason crop tools are popular in image editors
-   */
   max-width: 300px;
   max-height: 300px;
-  width: 80%;
+  width: 50%;
   height: auto;
-  margin-left: 60%;
+  margin-left: -2%;
 }
 
-/*
-.prev,
-.next {
-  border: none;
-  margin: 2px;
-  margin-top: -10%;
-  text-align: center;
-  border-radius: 5px;
-  font-weight: bold;
-  height: 45px;
-  padding: 10px;
-  line-height: 50%; /* This centers a button's text! 
-  border: 2px solid rgb(99,99,99); /* shorthand for how to do a border 
-}
-*/
+
 .carousel .carousel__actions{
   display: flex;
-  width: 20%;
+  width: 16%;
   justify-content: space-between;
   position: absolute;
   top: 40%;
   transform: translateY(-50%);
   margin-left: 1%;
+  border: 2px #4a4a4a;
 }
 
 .carousel .carousel__actions button{
@@ -293,16 +221,3 @@ form {
   font-weight: bold;
   cursor: pointer;
 }
-
-/*
-.prev:focus,
-.next:focus {
-  margin: 0;
-  /* Pick a good border colour and check out how it works with your buttons 
-}
-
-.prev:hover,
-.next:hover {
-  background-color: #4a4a4a;
-  /* Pick a good background colour for your hover pseudoclass
-}*/
