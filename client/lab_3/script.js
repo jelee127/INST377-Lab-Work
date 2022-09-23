@@ -70,13 +70,13 @@ function moveToPrevSlide() {
   to the elements accessed by the "querySelector" set to the class name on each
 */
 document.querySelector('.next') // Get the appropriate element (<button class="next">)
-  .addEventListener('click', function() => { // set an event listener on it - when it's clicked, do this callback function
+  .addEventListener('click', () => { // set an event listener on it - when it's clicked, do this callback function
     console.log('clicked next'); // let's tell the client console we made it to this point in the script
     moveToNextSlide(); // call the function above to handle this
   });
 
 document.querySelector('.prev')
-  .addEventListener('click', function() => {
+  .addEventListener('click', () => {
     console.log('clicked prev');
     moveToPrevSlide();
   });
