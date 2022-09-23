@@ -257,7 +257,7 @@ div.carousel {
   font-weight: bold;
   height: 45px;
   padding: 10px;
-  line-height: 10%; /* This centers a button's text! */
+  line-height: 50%; /* This centers a button's text! */
   border: 2px solid rgb(99,99,99); /* shorthand for how to do a border */
 }
 
