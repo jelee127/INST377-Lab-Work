@@ -192,6 +192,7 @@ form {
   width: 350px;
   height: 350px;
   margin: 0 auto;
+  margin-top: 0.6rem;
 }
 
 .grid img {
