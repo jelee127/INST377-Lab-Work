@@ -252,9 +252,8 @@ div.carousel {
   width: 100%;
   justify-content: space-between;
   position:absolute;
-  margin: -30%;
-  border-radius: 5px;
-  padding: 10px;
+  margin: -10%;
+  
   /*
   border: none;
   margin: 20px;
