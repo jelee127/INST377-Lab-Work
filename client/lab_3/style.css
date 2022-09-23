@@ -197,8 +197,8 @@ form {
 }
 
 .grid img {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
 }
 
 
@@ -244,8 +244,8 @@ div.carousel {
     - now make sure that images are _always_ square
     - ... there's a reason crop tools are popular in image editors
    */
-  width: 150px; 
-  height: 150px;
+  width: 200px; 
+  height: 200px;
 }
 
 .prev,
