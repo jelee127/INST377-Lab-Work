@@ -248,7 +248,7 @@ div.carousel {
 
 .prev,
 .next {
-  display: flex;
+  display:block;
   justify-content: space-between;
   position:absolute;
   border: none;
@@ -260,6 +260,7 @@ div.carousel {
   padding: 10px;
   line-height: 10px; /* This centers a button's text! */
   border: 2px solid rgb(99,99,99); /* shorthand for how to do a border */
+  background-color: aqua;
 }
 
 .prev:focus,
