@@ -100,6 +100,7 @@ form {
   width: fit-content;
   height:fit-content;
   padding: 1rem;
+  padding-left: 1.5rem;
   margin: 0 auto;
   font-weight: bold;
   
@@ -205,7 +206,7 @@ form {
 
 .carousel .carousel__actions{
   display: flex;
-  width: 16%;
+  width: 20%;
   justify-content: space-between;
   position: absolute;
   top: 50%;
