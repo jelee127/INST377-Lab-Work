@@ -197,8 +197,8 @@ form {
 }
 
 .grid img {
-  width: 150px;
-  height: 150px;
+  width: 125px;
+  height: 125px;
 }
 
 
@@ -224,11 +224,11 @@ div.carousel {
 }
 
 /* .carousel_item, */
-.hidden {
+.carousel_item .hidden {
   display: none;
 }
 
-.visible {
+.carousel_item .visible {
   display: block;
 }
 
