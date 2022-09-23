@@ -188,7 +188,7 @@ form {
 
 /* Deploy this with images as direct "children" and the images should pop into shape */
 .grid {
-  display: flex;
+  display:block;
   justify-content: space-evenly;
   flex-flow: wrap;
   width: 350px;
@@ -271,5 +271,6 @@ div.carousel {
 
 .prev:hover,
 .next:hover {
+  
   /* Pick a good background colour for your hover pseudoclass */
 }
