@@ -277,7 +277,7 @@ form {
 */
 .carousel .carousel__actions{
   display: flex;
-  width: 20%;
+  width: 21%;
   justify-content: space-between;
   position: absolute;
   top: 40%;
