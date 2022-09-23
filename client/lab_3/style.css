@@ -248,7 +248,8 @@ div.carousel {
 
 .prev,
 .next {
-  display:block;
+  display: flex;
+  width: 100%;
   justify-content: space-between;
   position:absolute;
   border: none;
@@ -259,19 +260,19 @@ div.carousel {
   height: 45px;
   padding: 10px;
   line-height: 10px; /* This centers a button's text! */
-   /* shorthand for how to do a border */
-  background-color: aqua;
+  border: 2px solid rgb(99,99,99); /* shorthand for how to do a border */
+  background-color: rgb(122, 230, 122);
+
 }
 
 .prev:focus,
 .next:focus {
-  margin: 0px;
-  border: 2px solid rgb(99,99,99);
+  margin: 5px;
   /* Pick a good border colour and check out how it works with your buttons */
 }
 
 .prev:hover,
 .next:hover {
   /* Pick a good background colour for your hover pseudoclass */
-  background-color: rgb(255, 40, 32);
+  background-color: rgb(19, 83, 3);
 }
