@@ -222,3 +222,11 @@ form {
   font-weight: bold;
   cursor: pointer;
 }
+
+.carousel .carousel__actions :hover{
+  background-color: rgb(255, 115, 0);
+}
+
+.carousel .carousel__actions :focus{
+  border: 2px #ff3c00;
+}
