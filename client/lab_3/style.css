@@ -225,6 +225,7 @@ form {
 
 .carousel .carousel__actions :hover{
   color: rgb(246, 169, 93);
+  background-color: rgba(245, 255, 158, 0.8);
   text-decoration: none;
 }
 
