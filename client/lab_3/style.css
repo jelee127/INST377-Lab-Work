@@ -200,7 +200,7 @@ form {
   max-height: 300px;
   width: 50%;
   height: auto;
-  margin-left: -2%;
+  align-self: center;
 }
 
 
