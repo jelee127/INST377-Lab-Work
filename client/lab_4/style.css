@@ -124,8 +124,6 @@ form {
   flex: 1 2 auto;
   margin: 1rem;
   align-items: center;
-  max-width: 450px;
-  height: 580px;
   border: 2px dashed;
   padding-top: 20px;
 }
