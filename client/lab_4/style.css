@@ -63,7 +63,6 @@ form {
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
-  
 }
 
 .header {
@@ -116,8 +115,8 @@ form {
   margin: 0.5rem;
   padding: 5px;
   border: 2px dashed;
-  width: 80%;
-  height: 30%;
+  width: 450px;
+  
 }
 
 .right_section {
@@ -129,7 +128,7 @@ form {
   border: 2px dashed;
   padding: 5px;
   width: 80%;
-  height: 30%;
+ 
 }
 
 
@@ -191,12 +190,12 @@ form input {
     /* check it out by using your developer tools to shrink your screen-size */
     .container {
       background-color: #383F51;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-direction: column;
+      }
     }
 }
 
-/*desktop*/
-@media only screen and (width > 736px){
-  .container {
-    background-color: #383F51;
-  }
-}
+
