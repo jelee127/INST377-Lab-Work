@@ -50,12 +50,14 @@ form input {
 @media only screen and (width > 736px){
   .container {
     background-color: rgba(204, 8, 162, 0.65);
+    justify-content: center;
+    align-items: center;
   }
   .header{
     display: flex;
     border: 5px dashed;
     background-color: rgb(200, 146, 250);
-    font-size: 1.5rem;
+    font-size: 1.5rem bold;
     padding-top: 0.5rem;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -76,13 +78,16 @@ form input {
     display: flex;
     border: 2px dashed;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
     border-radius: 10px;
     width: 650px;
     height: 350;
     margin-top: 4%;
   }
+  .forminputs{
+    font-size: 1rem bold;
+  }
+
   .inputbox{
     display: flex;
     width: 500px;
