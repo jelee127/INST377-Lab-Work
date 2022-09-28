@@ -49,6 +49,8 @@ form input {
 /*desktop*/
 @media only screen and (width > 736px){
   .container {
+    display: flex;
+    flex-wrap: wrap;
     background-color: rgba(204, 8, 162, 0.65);
     justify-content: center;
     align-items: center;
@@ -80,7 +82,8 @@ form input {
     display: flex;
     border: 3px dashed;
     flex-wrap: wrap;
-    justify-content: center space-around;
+    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: column;
     border-radius: 10px;
     width: 60%;
