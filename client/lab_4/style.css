@@ -96,7 +96,7 @@ form {
 
 
 .box{
-  background-color: #DDDBF1;
+  background-color: #3c4f76d7;
   border: 2px dashed;
   border-radius: 4px;
 
@@ -110,7 +110,7 @@ form {
 }
 
 .left_section {
-  background-color: #3C4F76;
+  background-color: #DDDBF1;
   flex: 0 1 auto;
   margin: 1rem;
   padding: 1.2rem;
@@ -118,7 +118,7 @@ form {
 }
 
 .right_section {
-  background-color: #3C4F76;
+  background-color: #DDDBF1;
   flex: 1 2 auto;
   margin: 1rem;
   align-items: center;
