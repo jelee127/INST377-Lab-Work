@@ -130,7 +130,7 @@ form {
 .footer {
   flex-shrink: 0;
   padding: 0.6rem;
-  background-color: rgba(0, 139, 139, 0.8);
+  background-color: #DDDBF1;
   font-size: 1rem;
   font-weight: 600;
   position: absolute;
