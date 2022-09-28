@@ -68,10 +68,10 @@ form {
 }
 
 .header {
-  padding-top: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 1.5rem;
   border: 3px dashed;
 }
 
@@ -86,8 +86,8 @@ form {
 
   /* shapes */
   border-radius: 6px;
-  font-size: 1rem;
-  padding: 1rem;
+  font-size: 1.5rem;
+  padding: 1.5rem;
   margin:0; /* removing the margin on h1 tags means the header pins to the top if we move */
 
 
