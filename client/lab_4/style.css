@@ -98,7 +98,7 @@ form {
 
   width: fit-content;
   height:fit-content;
-  padding: 1rem;
+  padding: 0.5rem;
   padding-left: 1.5rem;
   margin: 0 auto;
   font-weight: bold;
@@ -113,7 +113,7 @@ form {
   margin: 0.5rem;
   padding: 5px;
   border: 2px dashed;
-  width: 80%px;
+  width: 80%;
   
 }
 
@@ -193,6 +193,7 @@ form input {
     align-items: center;
     flex-direction: column;
   }
+  
   
 }
 
