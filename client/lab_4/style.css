@@ -71,6 +71,7 @@ form {
   padding-left: 1rem;
   padding-right: 1rem;
   padding-bottom: 1rem;
+  border: 3px dashed;
 }
 
 
@@ -268,74 +269,14 @@ form input {
     .container {
       background-color: rgba(204, 8, 162, 0.65);
     }
-    /*
-    .header{
-      display: flex;
-      border: 2px dashed;
-      background-color: rgb(200, 146, 250);
-      font-size: 1rem;
-      padding-top: 1rem;
-      padding-left: 1rem;
-      padding-right: 1rem;
-      padding-bottom: 1rem;
-    }*/
+    
 }
 
-/*desktop*/
+/*desktop
 @media only screen and (width > 736px){
   .container {
-    display: flex;
-    flex-wrap: wrap;
     background-color: rgba(204, 8, 162, 0.65);
-    justify-content: center;
-    align-items: center;
+    
   }
-  /*
-  .header{
-    display: flex;
-    border: 5px dashed;
-    background-color: rgb(200, 146, 250);
-    font-size: 1.5rem;
-    padding-top: 0.5rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-bottom: 0.5rem;
-    border-radius: 10px;
-    font-weight: bold;
-  }
-
-  .outsidebox{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    border: 3px dashed;
-    width: 90%;
-    height: 500px;
-    border-radius: 10px;
-    padding: 1rem;
-
-  }
-  .insidebox{
-    display: flex;
-    border: 3px dashed;
-    flex-wrap: wrap;
-    justify-content: center;
-    justify-content: space-evenly;
-    flex-direction: column;
-    border-radius: 10px;
-    width: 60%;
-    height: 50%;
-    margin-top: 4%;
-    padding: 1rem;
-  }
-  .forminputs{
-    display: flex;
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-top: 2%;
-    margin-left: 2%;
-  }
-  */
+*/  
 }
