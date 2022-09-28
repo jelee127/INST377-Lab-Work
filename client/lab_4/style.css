@@ -111,7 +111,6 @@ form {
 
 .left_section {
   background-color: #DDDBF1;
-  display: flex;
   justify-items: center;
   flex: 0 1 auto;
   margin: 0.5rem;
