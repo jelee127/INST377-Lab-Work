@@ -98,13 +98,7 @@ form input {
     margin-top: 2%;
     margin-left: 2%;
   }
-/*
-  .inputbox{
-    display: flex;
-    width: 70%;
-    justify-content: center;
-    align-items: center;
-    border-radius: 2px;
+  .button{
+    padding: 0%;
   }
-*/
 }
