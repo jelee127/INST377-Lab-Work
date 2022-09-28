@@ -112,12 +112,13 @@ form {
   margin: 0.5rem;
   padding: 5px;
   border: 2px dashed;
+  margin-left: 1.5rem
 }
 
 .right_section {
   background-color: #DDDBF1;
   flex: 1 2 auto;
-  margin: 0.5rem;
+  margin: 1rem;
   align-items: center;
   justify-content: center;
   border: 2px dashed;
