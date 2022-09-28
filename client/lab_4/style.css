@@ -65,23 +65,31 @@ form input {
   .outsidebox{
     display: flex;
     align-items: flex-start;
-    margin-top: 2%;
-    border: 4px dashed;
+    justify-content: center;
+    margin-top: 1%;
+    border: 2px dashed;
     width: 700px;
     height: 400px;
     border-radius: 10px;
   }
   .insidebox{
     display: flex;
-    border: 4px dashed;
+    border: 2px dashed;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     border-radius: 10px;
     width: 650px;
     height: 350;
+    margin-top: 4%;
   }
   .inputbox{
+    display: flex;
     width: 500px;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    border-radius: 2px;
   }
   
 }
