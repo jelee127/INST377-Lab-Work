@@ -74,7 +74,7 @@ form input {
     margin-top: 2%;
     border: 3px dashed;
     width: 90%;
-    height: 400px;
+    height: 80%;
     border-radius: 10px;
 
   }
@@ -98,7 +98,5 @@ form input {
     margin-top: 2%;
     margin-left: 2%;
   }
-  .button{
-    padding: 0%;
-  }
+
 }
