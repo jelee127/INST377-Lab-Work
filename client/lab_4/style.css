@@ -79,7 +79,8 @@ form input {
   .insidebox{
     display: flex;
     border: 3px dashed;
-    justify-content: center space-between;
+    flex-wrap: wrap;
+    justify-content: center space-around;
     flex-direction: column;
     border-radius: 10px;
     width: 60%;
