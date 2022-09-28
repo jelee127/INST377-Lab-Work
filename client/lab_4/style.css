@@ -116,6 +116,7 @@ form {
   padding: 1rem;
   border: 2px dashed;
   width: 80%;
+  height: 30%;
 }
 
 .right_section {
@@ -126,6 +127,7 @@ form {
   border: 2px dashed;
   padding-top: 20px;
   width: 80%;
+  height: 30%;
 }
 
 
@@ -139,6 +141,7 @@ form {
   position: absolute;
   bottom: 0%;
   width: 100%;
+  border: 3px dashed;
 }
 
 .footer a {
@@ -152,7 +155,6 @@ form {
   /* red, green, blue, alpha */
   color: rgb(246, 169, 93);
   text-decoration: none;
-  border: 3px dashed;
 }
 
 
