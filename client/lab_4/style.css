@@ -67,29 +67,31 @@ form input {
   }
   .outsidebox{
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     margin-top: 5px;
-    border: 2px dashed;
+    border: 3px dashed;
     width: 90%;
     height: 400px;
     border-radius: 10px;
   }
   .insidebox{
     display: flex;
-    border: 2px dashed;
+    border: 3px dashed;
     justify-content: center;
     flex-direction: column;
     border-radius: 10px;
-    width: 650px;
-    height: 350;
+    width: 60%;
+    height: 50%;
     margin-top: 4%;
     padding-bottom: 1rem;
     padding-top: 1rem;
   }
   .forminputs{
-    font-size: 1rem;
+    display: flex;
+    font-size: 1.2rem;
     font-weight: bold;
+    justify-content: flex-start;
   }
 
   .inputbox{
