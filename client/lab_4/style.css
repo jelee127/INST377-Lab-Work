@@ -136,6 +136,7 @@ form {
   position: absolute;
   bottom: 0%;
   width: 100%;
+  border: 3px dashed;
 }
 
 .footer a {
@@ -149,6 +150,7 @@ form {
   /* red, green, blue, alpha */
   color: rgb(246, 169, 93);
   text-decoration: none;
+  border: 3px dashed;
 }
 
 .subtitle {
