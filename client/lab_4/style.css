@@ -113,7 +113,7 @@ form {
   background-color: #DDDBF1;
   flex: 0 1 auto;
   margin: 0.5rem;
-  padding: 1rem;
+  padding: 10px;
   border: 2px dashed;
   width: 80%;
   height: 30%;
@@ -125,7 +125,7 @@ form {
   margin: 0.5rem;
   align-items: center;
   border: 2px dashed;
-  padding-top: 20px;
+  padding: 10px;
   width: 80%;
   height: 30%;
 }
@@ -145,7 +145,7 @@ form {
 }
 
 .footer a {
-  color: rgba(255, 224, 138, 1);
+  color: #20A39E;
   text-decoration: underline;
 }
 
