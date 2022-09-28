@@ -11,34 +11,8 @@
 
 <!-- This week doesn't have a script.js file in it, 
     because you're focusing on HTML and CSS -->
-<!-- 
-<!DOCTYPE html>
-<html lang='en'>
-    <head>
-    <meta charset='UTF-8'/>
-    <title>INST377 Lab4 116334600</title>
-    <link rel='stylesheet' href='style.css'/>
-    </head>
-
-    <body>
-        <div class="header">
-            <p>Jaeeun Lee's Labs for INST377</p>
-        </div>
-        <div class="container">
-            <div class="outsidebox">
-            Form Inputs
-                <div class="insidebox">
-                    <p class="title">Restaurant Name</p>
-                    <input type="text" />
-                    <button style="width: 2cm;">submit</button>
-                </div>
-               
-            </div>
-        </div>
-    </body>
-</html>
--->
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -46,6 +20,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="wrapper">
         <header class="header">
@@ -53,7 +28,11 @@
         </header>
         <div class="container">
             <div class="left_section">
-
+                <form action="/api">
+                    <label for="resto"></label>
+                    <input type="text" name="resto" id="resto" />
+                    <button type="submit">Submit</button>
+                </form>
             </div>
             <div class="right_section">
                 <h3>Local Restaurants</h3>
@@ -64,4 +43,5 @@
         </div>
     </div>
 </body>
+
 </html>
