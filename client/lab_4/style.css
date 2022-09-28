@@ -114,7 +114,7 @@ form {
   justify-items: center;
   flex: 0 1 auto;
   margin: 0.5rem;
-  padding: 10px;
+  padding: 5px;
   border: 2px dashed;
   width: 80%;
   height: 30%;
@@ -127,7 +127,7 @@ form {
   align-items: center;
   justify-content: center;
   border: 2px dashed;
-  padding: 10px;
+  padding: 5px;
   width: 80%;
   height: 30%;
 }
