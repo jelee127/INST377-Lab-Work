@@ -53,12 +53,24 @@ form input {
   }
   .header{
     display: flex;
-    border: 2px dashed;
+    border: 5px dashed;
     background-color: rgb(200, 146, 250);
     font-size: 1.5rem;
-    padding-top: 1rem;
+    padding-top: 0.5rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-radius: 10px;
   }
+  .outsidebox{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .insidebox{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
 }
