@@ -64,7 +64,7 @@ form {
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
-  
+  border: 3px dashed;
 }
 
 .header {
@@ -72,13 +72,12 @@ form {
   padding-left: 1rem;
   padding-right: 1rem;
   padding-bottom: 1rem;
-  border: 3px dashed;
 }
 
 .header h1 {
   display: block;
   /* this will push other blocks out of the way */
-
+  border: 3px dashed;
   /* colors */
   background-color: #DDDBF1;
   color: #131313;
@@ -97,7 +96,7 @@ form {
 
 
 .box{
-  background-color: #4E4A59;
+  background-color: #DDDBF1;
   border: 2px dashed;
   border-radius: 4px;
 
