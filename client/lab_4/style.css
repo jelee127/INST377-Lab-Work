@@ -113,7 +113,6 @@ form {
   margin: 0.5rem;
   padding: 5px;
   border: 2px dashed;
-  width: 80%;
   
 }
 
@@ -126,7 +125,6 @@ form {
   border: 2px dashed;
   padding: 5px;
   width: 80%;
- 
 }
 
 
@@ -193,7 +191,26 @@ form input {
     align-items: center;
     flex-direction: column;
   }
+  .left_section {
+    background-color: #DDDBF1;
+    justify-items: center;
+    flex: 0 1 auto;
+    margin: 0.5rem;
+    padding: 5px;
+    border: 2px dashed;
+    width: 80%;
+  }
   
+  .right_section {
+    background-color: #DDDBF1;
+    flex: 1 2 auto;
+    margin: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed;
+    padding: 5px;
+    width: 80%;
+  }
   
 }
 
