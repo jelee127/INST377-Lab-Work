@@ -95,11 +95,10 @@ form {
   background-color: #3c4f76d7;
   border: 2px dashed;
   border-radius: 4px;
-
+  font-size: 1.2rem;
   width: fit-content;
   height:fit-content;
   padding: 0.5rem;
-  padding-left: 1.5rem;
   margin: 0 auto;
   font-weight: bold;
   width: 70%;
@@ -113,7 +112,6 @@ form {
   margin: 0.5rem;
   padding: 5px;
   border: 2px dashed;
-  
 }
 
 .right_section {
