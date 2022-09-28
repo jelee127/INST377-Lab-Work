@@ -188,14 +188,14 @@ form input {
 @media only screen and (max-width: 736px){
     /* Rules in here will only apply when a screen is the correct size */
     /* check it out by using your developer tools to shrink your screen-size */
-    .container {
-      background-color: #383F51;
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      flex-direction: column;
-      }
-    }
+  .container {
+    background-color: #383F51;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
+  
 }
 
 
