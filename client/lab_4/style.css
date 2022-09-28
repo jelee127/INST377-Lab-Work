@@ -290,6 +290,7 @@ form input {
     justify-content: center;
     align-items: center;
   }
+  /*
   .header{
     display: flex;
     border: 5px dashed;
@@ -302,7 +303,7 @@ form input {
     border-radius: 10px;
     font-weight: bold;
   }
-  /*
+
   .outsidebox{
     display: flex;
     align-items: center;
