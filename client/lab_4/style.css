@@ -111,6 +111,8 @@ form {
 
 .left_section {
   background-color: #DDDBF1;
+  display: flex;
+  justify-items: center;
   flex: 0 1 auto;
   margin: 0.5rem;
   padding: 10px;
@@ -124,6 +126,7 @@ form {
   flex: 1 2 auto;
   margin: 0.5rem;
   align-items: center;
+  justify-content: center;
   border: 2px dashed;
   padding: 10px;
   width: 80%;
