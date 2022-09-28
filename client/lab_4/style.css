@@ -63,7 +63,7 @@ form {
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
-  width: 80%;
+  
 }
 
 .header {
@@ -76,7 +76,7 @@ form {
 .header h1 {
   display: block;
   /* this will push other blocks out of the way */
-  border: 3px dashed;
+  border: 5px dashed;
   /* colors */
   background-color: #DDDBF1;
   color: #131313;
@@ -114,6 +114,7 @@ form {
   margin: 1rem;
   padding: 1.2rem;
   border: 2px dashed;
+  width: 80%;
 }
 
 .right_section {
@@ -136,7 +137,6 @@ form {
   position: absolute;
   bottom: 0%;
   width: 100%;
-  border: 3px dashed;
 }
 
 .footer a {
@@ -153,87 +153,6 @@ form {
   border: 3px dashed;
 }
 
-.subtitle {
-  color: rgba(0, 0, 0, 0.8);
-  
-  margin-bottom: 5px;
-}
-
-
-/* Deploy this with images as direct "children" and the images should pop into shape */
-.grid {
-  display: flex;
-  justify-content: space-evenly;
-  flex-flow: wrap;
-  width: 350px;
-  height: 350px;
-  margin: 0 auto;
-}
-
-.grid img {
-  width: 150px;
-  height: 150px;
-}
-
-.carousel {
-  max-width: 350px;
-  overflow: hidden;
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 auto;
-  margin-bottom: 1rem;
-}
-
-
-.carousel .carousel__item,
-.carousel .carousel__item--hidden{
-  display: none;
-}
-
-.carousel .carousel__item--visible {
-  display: block;
-}
-
-.carousel .carousel__item img {
-  max-width: 300px;
-  max-height: 300px;
-  width: 50%;
-  height: auto;
-  align-self: center;
-}
-
-
-.carousel .carousel__actions{
-  display: flex;
-  width: 22%;
-  justify-content: space-between;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  margin-left: 1%;
-  border: 2px #4a4a4a;
-}
-
-.carousel .carousel__actions button{
-  border-radius: 10px;
-  border: 0;
-  padding: 10px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.carousel .carousel__actions :hover{
-  color: rgb(246, 169, 93);
-  background-color: rgba(245, 255, 158, 0.8);
-  text-decoration: none;
-}
-
-.carousel .carousel__actions :focus{
-  border: 2px #ff3c00;
-}
 
 form input {
     /* This is a hack to make sure our boxes line up with one another nicely */
