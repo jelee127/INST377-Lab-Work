@@ -2,6 +2,8 @@
     width: 200px;
     height: 400;
     background-color: blanchedalmond;
+    display: flex;
+    flex-wrap: wrap;
 }
 .grid div{
     width: 20px;
