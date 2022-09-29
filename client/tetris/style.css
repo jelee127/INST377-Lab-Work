@@ -1,0 +1,10 @@
+.grid{
+    width: 200px;
+    height: 400;
+    background-color: blanchedalmond;
+}
+.grid div{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+}
