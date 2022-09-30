@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded',() => {
 //undraw the tet
   function undraw(){
     current.forEach(index => {
-      squares[currentPosition + index].classList.remove('tetomino')
+      squares[currentPosition + index].classList.remove('tetromino')
     })
   }
 
