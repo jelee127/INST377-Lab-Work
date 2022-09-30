@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded',() => {
 
   }
   document.addEventListener('keyup', control)
-//move left, right, down
+//key movement
   function moveLeft(){
     undraw()
     const isAtLeftEdge = current.some(index => (currentPosition + index) % width === 0)
@@ -114,6 +114,16 @@ document.addEventListener('DOMContentLoaded',() => {
     currentPosition += width
     draw()
     freeze()
+  }
+
+  function rotate(){
+    undraw()
+    currentRotation ++
+    if(currentRotation === current.length){
+      currentRotation = 0
+    }
+    current = theTetrominoes[random][currentRotation]
+    draw()
   }
 
 //freeze
