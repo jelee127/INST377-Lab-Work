@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded',() => {
       [width, width + 1, width + 2, width + 3]
   ]
 
-  const theTetrominoes = [lTetrominom, zTetromino, tTetromino, oTetromino, iTetromino]
+  const theTetrominoes = [lTetromino, zTetromino, tTetromino, oTetromino, iTetromino]
 
   let currentPosition = 4
   let current = theTetrominoes[0][0]
