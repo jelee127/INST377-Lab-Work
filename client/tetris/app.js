@@ -57,20 +57,18 @@ document.addEventListener('DOMContentLoaded',() => {
       })
   }
   
-  //undraw the tet
+//undraw the tet
   function undraw(){
     current.forEach(index => {
       squares[currentPosition + index].classList.remove('tetomino')
     })
   }
 
-
-
-
-
-
-
-
+//interval
+  timerId = setInterval(moveDown, 1000)
+    undraw()
+    currentPosition += width
+    draw()
 
 
 
