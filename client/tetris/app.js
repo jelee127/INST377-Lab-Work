@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded',() => {
 
   let currentPosition = 4
 
-  let random = Math.floor(random()*theTetrominoes.length)
+  let random = Math.floor(Math.random()*theTetrominoes.length)
   console.log(random)
   let current = theTetrominoes[0][0]
 
