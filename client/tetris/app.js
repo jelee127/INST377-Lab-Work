@@ -46,11 +46,16 @@ document.addEventListener('DOMContentLoaded',() => {
   let currentPosition = 4
   let current = theTetrominoes[0][0]
 
-  //draw the first rotation
+  /*draw the first rotation
   function draw(){
       current.forEach(index => {
           squares[currentPosition+index].classList.add('tetromino')
       })
+  }*/
+  function draw(){
+    current.forEach(index => {
+      squares[currentPosition + index].classList
+    })
   }
 
   draw()
