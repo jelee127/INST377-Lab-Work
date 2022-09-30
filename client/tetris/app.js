@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded',() => {
   function rotate(){
     undraw()
     currentRotation ++
-    if(currentRotation === current.length){
+    if(currentRotation === current.length){ //turn it back 0 if it gets to 4
       currentRotation = 0
     }
     current = theTetrominoes[random][currentRotation]
