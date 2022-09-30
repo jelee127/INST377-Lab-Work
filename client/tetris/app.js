@@ -81,8 +81,7 @@ document.addEventListener('DOMContentLoaded',() => {
 //freeze
 function freeze(){
   if(current.some(index => squares[currentPosition + index + width].classList.contains('taken'))){
-    current.forEach(index => squares[currentPosition + index].classList.add('taken'))
-      
+    current.forEach(index => squares[currentPosition + index].classList.add('taken'))  
     random = nextRandom
     nextRandom = Math.floor(Math.random() * theTetrominoes.length)
     current = theTetrominoes[random][currentRotation]
@@ -105,16 +104,13 @@ function freeze(){
     }else if(e.keyCode === 40){
       moveDown()
     }
-
   }
   document.addEventListener('keyup', control)
 //key movement
   function moveLeft(){
     undraw()
     const isAtLeftEdge = current.some(index => (currentPosition + index) % width === 0)
-
     if(!isAtLeftEdge) currentPosition -= 1
-
     if(current.some(index => 
       squares[currentPosition + index].classList.contains('taken'))){
         currentPosition += 1  
@@ -125,9 +121,7 @@ function freeze(){
   function moveRight(){
     undraw()
     const isAtRightEdge = current.some(index => (currentPosition + index) % width === width -1)
-    
     if(!isAtRightEdge) currentPosition += 1
-
     if(current.some(index => 
       squares[currentPosition + index].classList.contains('taken'))){
         currentPosition -= 1  
@@ -194,7 +188,6 @@ startBtn.addEventListener('click', () => {
 function addScore(){
   for(let i = 0; i < 199; i += width){
     const row = [i, i+1, i+2, i+3, i+4, i+5, i+6, i+7, i+8, i+9]
-
     if(row.every(index => squares[index].classList.contains('taken'))){
       score += 10
       scoreDisplay.innerHTML = score
