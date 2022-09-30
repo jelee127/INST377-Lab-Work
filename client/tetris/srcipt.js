@@ -1,8 +1,7 @@
-function showAlert(){
-    var name='Jae'
-    alert('Hi '+ name)
-}
+document.addEventListener('DOMContentLoaded',() => {
+  const grid = document.querySelector('.grid')
+  let squares = Array.from(document.querySelector('.grid div'))
+  const width = 10;
+})
 
-function otherFunction(){
-    alert('Hi '+ name)
-}
+console.log(squares)
