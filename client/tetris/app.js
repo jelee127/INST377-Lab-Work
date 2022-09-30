@@ -158,7 +158,7 @@ function displayShape(){
     squares.classList.remove('tetromino')
   })
   upNextTetrominoes[nextRandom].forEach(index => {
-    displaySquares[displayIndex + index].classList.add('tetomino')
+    displaySquares[displayIndex + index].classList.add('tetromino')
   })
 }
 
