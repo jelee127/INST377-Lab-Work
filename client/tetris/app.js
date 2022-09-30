@@ -7,8 +7,15 @@ document.addEventListener('DOMContentLoaded',() => {
   let nextRandom = 0
   let timerId
   let score = 0
-//Tetrominoes
+  const colors = [
+    'orange',
+    'red',
+    'purple',
+    'green',
+    'blue'
+  ]
 
+//Tetrominoes
   const lTetromino = [
       [1, width+1, width*2+1, 2],
       [width, width+1, width+2, width*2+2],
@@ -56,6 +63,7 @@ document.addEventListener('DOMContentLoaded',() => {
   function draw(){
       current.forEach(index => {
           squares[currentPosition+index].classList.add('tetromino')
+          squares[currentPosition + index].style.backgrounColor = colors[random]
       })
   }
   
@@ -63,6 +71,7 @@ document.addEventListener('DOMContentLoaded',() => {
   function undraw(){
     current.forEach(index => {
       squares[currentPosition + index].classList.remove('tetromino')
+      squares[currentPosition + index].style.backgrounColor = ''
     })
   }
 
@@ -160,9 +169,11 @@ const upNextTetrominoes = [
 function displayShape(){
   displaySquares.forEach(squares => {
     squares.classList.remove('tetromino')
+    squares.style.backgrounColor = ''
   })
   upNextTetrominoes[nextRandom].forEach(index => {
     displaySquares[displayIndex + index].classList.add('tetromino')
+    displaySquares[displayIndex + index].style.backgrounColor = colors[nextRandom]
   })
 }
 
@@ -190,6 +201,7 @@ function addScore(){
       row.forEach(index => {
         squares[index].classList.remove('taken')
         squares[index].classList.remove('tetromino')
+        squares[index].style.backgrounColor = ''
       })
       const squaresRemoved = squares.splice(i, width)
       squares = squaresRemoved.concat(squares)
@@ -202,7 +214,7 @@ function addScore(){
 function gameOver(){
   if(current.some(index => 
     squares[currentPosition + index].classList.contains('taken'))){
-    scoreDisplay.innerHTML = 'end'
+    scoreDisplay.innerHTML = 'GAME OVER'
     clearInterval(timerId)
   }
 }
