@@ -74,10 +74,11 @@ function freeze(){
     current.forEach(index => squares[currentPosition + index].classList.add('taken'))
       
     random = nextRandom
-    random = Math.floor(Math.random() * theTetrominoes.length)
+    nextRandom = Math.floor(Math.random() * theTetrominoes.length)
     current = theTetrominoes[random][currentRotation]
     currentPosition = 4
     draw()
+    displayShape()
   }
 }  
 
