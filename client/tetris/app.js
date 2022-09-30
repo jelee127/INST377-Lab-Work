@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded',() => {
   
 //keyCode
   function control(e){
-    if(e.keyCodes === 37){
+    if(e.keyCode === 37){
       moveLeft()
     }
   }
