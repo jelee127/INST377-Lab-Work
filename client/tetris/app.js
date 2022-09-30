@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded',() => {
 
   function moveRight(){
     undraw()
-    const isAtRightEdge = current.some(index => (currentPosition + index) % width === -1)
+    const isAtRightEdge = current.some(index => (currentPosition + index) % width === width -1)
     
     if(!isAtRightEdge) currentPosition += 1
 
