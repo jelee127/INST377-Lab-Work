@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded',() => {
 
 //interval
 
-  timerId = setInterval(moveDown, 1000)
+  timerId = setInterval(moveDown, 500)
   
   function moveDown(){
     undraw()
@@ -77,15 +77,14 @@ document.addEventListener('DOMContentLoaded',() => {
 
 //freeze
   function freeze(){
-    if(current.some(index => 
-      squares[currentPosition + index + width].classList.contains('.taken'))){
-        current.forEach(index => squares[currentPosition + index].classList.add('.taken'))
+    if(current.some(index => squares[currentPosition + index + width].classList.contains('taken'))){
+      current.forEach(index => squares[currentPosition + index].classList.add('taken'))
         
-        random = Math.floor(Math.random() * theTetrominoes.length)
-        current = theTetrominoes[random][currentRotation]
-        currentPosition = 4
-        draw()
-      }
+      random = Math.floor(Math.random() * theTetrominoes.length)
+      current = theTetrominoes[random][currentRotation]
+      currentPosition = 4
+      draw()
+    }
   }
 
 })
