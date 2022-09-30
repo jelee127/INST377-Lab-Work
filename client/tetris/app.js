@@ -78,9 +78,10 @@ document.addEventListener('DOMContentLoaded',() => {
 //freeze
   function freeze(){
     if(current.some(index => 
-      squares[currentPosition + index + width].classList.contains('taken'))){
-        current.forEach(index => squares[currentPosition + index].classList.add('taken'))
-        random = math.floor(Math.random() * theTetrominoes.length)
+      squares[currentPosition + index + width].classList.contains('.taken'))){
+        current.forEach(index => squares[currentPosition + index].classList.add('.taken'))
+        
+        random = Math.floor(Math.random() * theTetrominoes.length)
         current = theTetrominoes[random][currentRotation]
         currentPosition = 4
         draw()
