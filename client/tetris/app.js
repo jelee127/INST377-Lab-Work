@@ -65,9 +65,16 @@ document.addEventListener('DOMContentLoaded',() => {
   }
 
 //interval
-
   timerId = setInterval(moveDown, 200)
   
+//keyCode
+  function control(e){
+    if(e.keyCodes === 37){
+      moveLeft()
+    }
+  }
+  document.addEventListener('keyup', control)
+
   function moveDown(){
     undraw()
     currentPosition += width
@@ -86,5 +93,36 @@ document.addEventListener('DOMContentLoaded',() => {
       draw()
     }
   }
+
+//move left and right
+  function moveLeft(){
+    undraw()
+    const isAtLeftEdge = current.some(index => (currentPosition + index) % width === 0)
+
+    if(!isAtLeftEdge) currentPosition -= 1
+
+    if(current.some(index => 
+      squares[currentPosition + index].classList.contains('taken'))){
+        currentPosition += 1  
+    }
+    draw()
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 })
