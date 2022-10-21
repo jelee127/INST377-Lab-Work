@@ -123,7 +123,12 @@ async function mainEvent() {
 
       // And this function call will perform the "side effect" of injecting the HTML list for you
       injectHTML(restaurantList);
-
+      const target = document.querySelector("#restaurant_list");
+      target.innerHTML = '';
+      list.forEach(item => {
+        const str = `<li>${item.name} </li>`;
+        target.innerHTML += str;
+      })
       // By separating the functions, we open the possibility of regenerating the list
       // without having to retrieve fresh data every time
       // We also have access to some form values, so we could filter the list based on name
