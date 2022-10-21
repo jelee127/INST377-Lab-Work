@@ -10,6 +10,11 @@
     Under this comment place any utility functions you need - like an inclusive random number selector
     https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
 */
+function getRandomIntInclusive(min, max){
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
 
 function injectHTML(list) {
   console.log('fired injectHTML');
@@ -31,7 +36,10 @@ function injectHTML(list) {
 
 function processRestaurants(list) {
   console.log('fired restaurants list');
-
+  const array = [...Array(15).keys()];
+  const randos = array.map((item) => {
+    return;
+  })
   /*
     ## Process Data Separately From Injecting It
       This function should accept your 1,000 records
