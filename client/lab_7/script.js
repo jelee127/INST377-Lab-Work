@@ -122,8 +122,8 @@ function getRandomIntInclusive(min, max){
 
       form.addEventListener('input', (event) => {
         console.log(event.target.value);
-        currentList = filterList(currentList, event.target.value);
-        injectHTML(currentList);
+        const filteredList = filterList(currentList, event.target.value);
+        injectHTML(filteredList);
       })
 
       // And here's an eventListener! It's listening for a "submit" button specifically being clicked
