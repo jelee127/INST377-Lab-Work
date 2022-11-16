@@ -94,7 +94,7 @@
   }
   
   .left_section .box{
-    width: 30%;
+    width: 80%;
   }
 
   .box{
@@ -118,7 +118,8 @@
     margin: 1rem;
     padding-bottom: 1.5rem;
     border: 2px dashed;
-    margin-left: 1.5rem
+    margin-left: 1.5rem;
+    width: 30%;
   }
   
   .right_section {
