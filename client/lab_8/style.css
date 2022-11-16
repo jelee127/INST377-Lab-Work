@@ -208,6 +208,9 @@
       width: 80%;
     }
     
+  /*Map styles*/
+  #map { height: 180px; }
+
   }
   .lds-ellipsis {
       display: inline-block;
