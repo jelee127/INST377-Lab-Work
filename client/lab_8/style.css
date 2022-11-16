@@ -93,6 +93,10 @@
     text-align: center;
   }
   
+  .left_section .box{
+    width: 30%;
+  }
+
   .box{
     background-color: #3c4f76d7;
     border: 2px dashed;
