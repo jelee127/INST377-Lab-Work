@@ -92,6 +92,10 @@
   .left_section h3{
     text-align: center;
   }
+  
+  .left_section .box{
+    width: 80%;
+  }
 
   .box{
     background-color: #3c4f76d7;
