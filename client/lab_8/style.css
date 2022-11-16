@@ -187,14 +187,9 @@
     height: 380px;
     border: 2px dashed rgb(99, 99, 99);
     margin-bottom: 1rem;
-    align-content: center;
-    align-items: center;
+    margin-left: 30%;
   }
-  .map{
-    align-items: center;
-    align-self: center;
-    align-content: center;
-  }
+ 
 
   .lds-ellipsis {
       display: inline-block;
