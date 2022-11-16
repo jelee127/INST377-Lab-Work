@@ -209,7 +209,7 @@
     }
     
   /*Map styles*/
-  #map{
+  .map{
     display: block;
     width: 400px;
     height: 380px;
