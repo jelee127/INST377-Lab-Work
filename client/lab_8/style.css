@@ -61,16 +61,16 @@
   }
   
   .header {
-    padding-top: 1rem;
+    padding-top: 0.8rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 0.8rem;
   }
   
   .header h1 {
     display: block;
     /* this will push other blocks out of the way */
-    border: 5px dashed;
+    border: 3px dashed;
     /* colors */
     background-color: #DDDBF1;
     color: #131313;
@@ -97,7 +97,7 @@
     height:fit-content;
     padding: 0.5rem;
     margin: 0 auto;
-    
+    align-items: center;
     width: 70%;
     
   }
