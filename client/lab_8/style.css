@@ -89,12 +89,8 @@
     text-align: center;
   }
 
-  .right_section h3{
+  .left_section h3{
     text-align: center;
-  }
-  
-  .left_section .box{
-    width: 80%;
   }
 
   .box{
