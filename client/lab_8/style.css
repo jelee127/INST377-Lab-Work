@@ -88,6 +88,10 @@
   .right_section h4{
     text-align: center;
   }
+
+  .right_section h3{
+    text-align: center;
+  }
   
   .box{
     background-color: #3c4f76d7;
@@ -185,6 +189,11 @@
     margin-bottom: 1rem;
     align-content: center;
     align-items: center;
+  }
+  .map{
+    align-items: center;
+    align-self: center;
+    align-content: center;
   }
 
   .lds-ellipsis {
