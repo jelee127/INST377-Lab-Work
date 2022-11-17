@@ -93,7 +93,7 @@ function getRandomIntInclusive(min, max){
       const {coordinates} = item.geocoded_column_1;
       L.marker([coordinates[1], coordinates[0]]).addTo(map);
       if(index === 0){
-        map.setView([38.9897, -76.9378], 9);
+        map.setView([38.9897, -76.9378], 11);
       }
     })
   }
