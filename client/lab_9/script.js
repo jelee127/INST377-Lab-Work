@@ -130,6 +130,15 @@ function getRandomIntInclusive(min, max){
     );
   }
 
+  async function getData(){
+    const url = 'https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json';
+    const data = await fetch(url);
+    const json = await data.json(); 
+    const reply = json.filter((item) => Boolean(item.geocoded_column_1)).filter((item) => Boolean(item.name));
+    return reply;
+  }
+
+
   async function mainEvent() {
     /*
       ## Main Event
@@ -156,16 +165,48 @@ function getRandomIntInclusive(min, max){
     const arrayFromJson = await results.json(); // here is where we get the data from our request as JSON
   
     initChart(chartTarget);
+    const chartData = await getData();
 
-    
     // This IF statement ensures we can't do anything if we don't have information yet
-    if (arrayFromJson.data?.length > 0) {
+    if (chartData.length > 0) {
 
       submit.style.display = 'block'; // let's turn the submit button back on by setting it to display as a block when we have data available
   
       loadAnimation.classList.remove('lds-ellipsis');
       loadAnimation.classList.add('lds-ellipsis_hidden');
-/*
+
+      let currentArray;
+      form.addEventListener('submit', async(SubmitEvent) => {
+        SubmitEvent.preventDefault();
+        currentArray = processRestaurants(arrayFromJson.data);
+        const restaurant = currentArray.filter((item) => Boolean(item.geocoded_column_1));
+
+        injectHTML(restaurant);
+        //markerPlace(restaurant, map);
+      });
+
+      restoName.addEventListener('input', (event) => {
+        if(!currentArray.length) {return;}
+
+        const restaurant = currentArray
+          .filter((item) => {
+            const lowerCaseName = item.name.toLowerCase();
+            const lowerCaseQuery = event.target.value.toLowerCase();
+            return lowerCaseName.includes(lowerCaseQuery);
+          })
+          .filter((item) => Boolean(item.geocoded_column_1));
+        
+        if (restaurant.lenght > 0){
+          injectHTML(restaurant);
+          //markerPlace(restaurant, map);
+        }
+      });
+
+    }
+  }
+  
+  document.addEventListener('DOMContentLoaded', async () => mainEvent()); // the async keyword means we can make API requests
+  /*
       let currentList = [];
 
       form.addEventListener('input', (event) => {
@@ -194,35 +235,3 @@ function getRandomIntInclusive(min, max){
         // without having to retrieve fresh data every time
         // We also have access to some form values, so we could filter the list based on name
       });*/
-      let currentArray;
-      form.addEventListener('submit', async(SubmitEvent) => {
-        SubmitEvent.preventDefault();
-        currentArray = processRestaurants(arrayFromJson.data);
-        const restaurant = currentArray.filter((item) => Boolean(item.geocoded_column_1));
-
-        injectHTML(restaurant);
-        markerPlace(restaurant, map);
-      });
-
-      restoName.addEventListener('input', (event) => {
-        if(!currentArray.length) {return;}
-
-        const restaurant = currentArray
-          .filter((item) => {
-            const lowerCaseName = item.name.toLowerCase();
-            const lowerCaseQuery = event.target.value.toLowerCase();
-            return lowerCaseName.includes(lowerCaseQuery);
-          })
-          .filter((item) => Boolean(item.geocoded_column_1));
-        
-        if (restaurant.lenght > 0){
-          injectHTML(restaurant);
-          //markerPlace(restaurant, map);
-        }
-      });
-
-    }
-  }
-  
-  document.addEventListener('DOMContentLoaded', async () => mainEvent()); // the async keyword means we can make API requests
-  
