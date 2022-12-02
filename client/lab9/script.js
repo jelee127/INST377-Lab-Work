@@ -98,6 +98,38 @@ function getRandomIntInclusive(min, max){
     })
   }
 
+  function initChart(chart){
+    const labels = [
+      'January',
+      'February',
+      'March',
+      'April',
+      'May',
+      'June',
+    ];
+  
+    const data = {
+      labels: labels,
+      datasets: [{
+        label: 'My First dataset',
+        backgroundColor: 'rgb(255, 99, 132)',
+        borderColor: 'rgb(255, 99, 132)',
+        data: [0, 10, 5, 2, 20, 30, 45],
+      }]
+    };
+  
+    const config = {
+      type: 'line',
+      data: data,
+      options: {}
+    };
+
+    return new Chart(
+      chart, 
+      config
+    );
+  }
+
   async function mainEvent() {
     /*
       ## Main Event
@@ -111,6 +143,7 @@ function getRandomIntInclusive(min, max){
     const submit = document.querySelector('#get-resto'); // get a reference to your submit button
     const loadAnimation = document.querySelector('.lds-ellipsis');
     const restoName = document.querySelector('#resto');
+    const chartTarget = document.querySelector('#myChart');
     submit.style.display = 'none'; // let your submit button disappear
   
     /*
@@ -122,21 +155,9 @@ function getRandomIntInclusive(min, max){
     const results = await fetch('/api/foodServicePG');
     const arrayFromJson = await results.json(); // here is where we get the data from our request as JSON
   
-    /*
-      Below this comment, we log out a table of all the results using "dot notation"
-      An alternate notation would be "bracket notation" - arrayFromJson["data"]
-      Dot notation is preferred in JS unless you have a good reason to use brackets
-      The 'data' key, which we set at line 38 in foodServiceRoutes.js, contains all 1,000 records we need
-    */
-    console.table(arrayFromJson.data);
-  
-    // in your browser console, try expanding this object to see what fields are available to work with
-    // for example: arrayFromJson.data[0].name, etc
-    console.log(arrayFromJson.data[0]);
-  
-    // this is called "string interpolation" and is how we build large text blocks with variables
-    console.log(`${arrayFromJson.data[0].name} ${arrayFromJson.data[0].category}`);
-  
+    initChart(chartTarget);
+
+    
     // This IF statement ensures we can't do anything if we don't have information yet
     if (arrayFromJson.data?.length > 0) {
 
@@ -196,7 +217,7 @@ function getRandomIntInclusive(min, max){
         
         if (restaurant.lenght > 0){
           injectHTML(restaurant);
-          markerPlace(restaurant, map);
+          //markerPlace(restaurant, map);
         }
       });
 
