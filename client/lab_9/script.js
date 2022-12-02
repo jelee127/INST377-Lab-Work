@@ -98,23 +98,18 @@ function getRandomIntInclusive(min, max){
     })
   }
 
-  function initChart(chart){
-    const labels = [
-      'January',
-      'February',
-      'March',
-      'April',
-      'May',
-      'June',
-    ];
+  function initChart(chart, object){
+    const labels = Object.keys(object);
   
+    const info = Object.keys(object).map((item) => object[item].length);
+
     const data = {
       labels: labels,
       datasets: [{
         label: 'My First dataset',
         backgroundColor: 'rgb(255, 99, 132)',
         borderColor: 'rgb(255, 99, 132)',
-        data: [0, 10, 5, 2, 20, 30, 45],
+        data: info
       }]
     };
   
@@ -128,6 +123,17 @@ function getRandomIntInclusive(min, max){
       chart, 
       config
     );
+  }
+
+  function shapeDataForLineChart(array){
+    return array.reduce((collection, item) => {
+      if(!collection[item.category]){
+        collection[item.category] = [item]
+      }else{
+        collection[item.category].push(item);
+      }
+      return collection;
+    }, {});
   }
 
   async function getData(){
@@ -164,8 +170,12 @@ function getRandomIntInclusive(min, max){
     const results = await fetch('/api/foodServicePG');
     const arrayFromJson = await results.json(); // here is where we get the data from our request as JSON
   
-    initChart(chartTarget);
+  
     const chartData = await getData();
+    const shapedData = shapeDataForLineChart(chartData);
+    console.log(shapedData);
+    const myChart = initChart(chartTarget, shapedData);
+
 
     // This IF statement ensures we can't do anything if we don't have information yet
     if (chartData.length > 0) {
