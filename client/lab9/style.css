@@ -255,6 +255,11 @@
       }
     }
   
+  .chart_container{
+    height: 100%;
+    width:100%;
+  }
+  
       /* How To Write A Media Query For Small Screens */
   /*mobile*/
   @media only screen and (max-width: 736px){
