@@ -98,7 +98,7 @@ function getRandomIntInclusive(min, max){
     })
   }
 
-  function initChart(chart, object){
+  function initChart(targetElement, object){
     const labels = Object.keys(object);
   
     const info = Object.keys(object).map((item) => object[item].length);
@@ -120,9 +120,21 @@ function getRandomIntInclusive(min, max){
     };
 
     return new Chart(
-      chart, 
+      targetElement, 
       config
     );
+  }
+
+  function changeChart(chart, data){
+    const labels = Object.keys(object);
+    const info = Object.keys(object).map((item) => object[item].length);
+
+    chart.data.labels = labels;
+    chart.data.datasets.forEach((set) => {
+      set.data = info; 
+      return set;
+    });
+    chart.update();
   }
 
   function shapeDataForLineChart(array){
@@ -185,31 +197,26 @@ function getRandomIntInclusive(min, max){
       loadAnimation.classList.remove('lds-ellipsis');
       loadAnimation.classList.add('lds-ellipsis_hidden');
 
-      let currentArray;
-      form.addEventListener('submit', async(SubmitEvent) => {
-        SubmitEvent.preventDefault();
-        currentArray = processRestaurants(arrayFromJson.data);
-        const restaurant = currentArray.filter((item) => Boolean(item.geocoded_column_1));
+      let currentList = [];
+      
 
-        injectHTML(restaurant);
-        //markerPlace(restaurant, map);
+      form.addEventListener('input', (event) => {
+        console.log(event.target.value);
+        const filteredList = filterList(currentList, event.target.value);
+        injectHTML(filteredList);
+          //markerPlace(restaurant, map);
+        
       });
 
-      restoName.addEventListener('input', (event) => {
-        if(!currentArray.length) {return;}
+      form.addEventListener('submit', (submitEvent) => {
+        submitEvent.preventDefault();
+        currentList = processRestaurants(chartData);
 
-        const restaurant = currentArray
-          .filter((item) => {
-            const lowerCaseName = item.name.toLowerCase();
-            const lowerCaseQuery = event.target.value.toLowerCase();
-            return lowerCaseName.includes(lowerCaseQuery);
-          })
-          .filter((item) => Boolean(item.geocoded_column_1));
-        
-        if (restaurant.lenght > 0){
-          injectHTML(restaurant);
-          //markerPlace(restaurant, map);
-        }
+        injectHTML(currentList);
+        const localData = shapeDataForLineChart(currentList);
+        changeChart(myChart, localData);
+      
+        //markerPlace(restaurant, map);
       });
 
     }
