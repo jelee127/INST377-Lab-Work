@@ -110,6 +110,7 @@ function getRandomIntInclusive(min, max){
     const form = document.querySelector('.main_form'); // get your main form so you can do JS with it
     const submit = document.querySelector('#get-resto'); // get a reference to your submit button
     const loadAnimation = document.querySelector('.lds-ellipsis');
+    const restoName = document.querySelector('#resto');
     submit.style.display = 'none'; // let your submit button disappear
   
     /*
@@ -143,7 +144,7 @@ function getRandomIntInclusive(min, max){
   
       loadAnimation.classList.remove('lds-ellipsis');
       loadAnimation.classList.add('lds-ellipsis_hidden');
-
+/*
       let currentList = [];
 
       form.addEventListener('input', (event) => {
@@ -152,10 +153,10 @@ function getRandomIntInclusive(min, max){
         injectHTML(filteredList);
         markerPlace(filteredList, pageMap);
       })
-
+*/
       // And here's an eventListener! It's listening for a "submit" button specifically being clicked
       // this is a synchronous event event, because we already did our async request above, and waited for it to resolve
-      form.addEventListener('submit', (submitEvent) => {
+      /*form.addEventListener('submit', (submitEvent) => {
         // This is needed to stop our page from changing to a new URL even though it heard a GET request
         submitEvent.preventDefault();
   
@@ -171,14 +172,36 @@ function getRandomIntInclusive(min, max){
         // By separating the functions, we open the possibility of regenerating the list
         // without having to retrieve fresh data every time
         // We also have access to some form values, so we could filter the list based on name
+      });*/
+      let currentArray;
+      form.addEventListener('submit', async(SubmitEvent) => {
+        SubmitEvent.preventDefault();
+        currentArray = processRestaurants(arrayFromJson.data);
+        const restaurant = currentArray.filter((item) => Boolean(item.geocoded_column_1));
+
+        injectHTML(restaurant);
+        markerPlace(restaurant, map);
       });
+
+      restoName.addEventListener('input', (event) => {
+        if(!currentArray.length) {return;}
+
+        const restaurant = currentArray
+          .filter((item) => {
+            const lowerCaseName = item.name.toLowerCase();
+            const lowerCaseQuery = event.target.value.toLowerCase();
+            return lowerCaseName.includes(lowerCaseQuery);
+          })
+          .filter((item) => Boolean(item.geocoded_column_1));
+        
+        if (restaurant.lenght > 0){
+          injectHTML(restaurant);
+          markerPlace(restaurant, map);
+        }
+      });
+
     }
   }
   
-  /*
-    This last line actually runs first!
-    It's calling the 'mainEvent' function at line 57
-    It runs first because the listener is set to when your HTML content has loaded
-  */
   document.addEventListener('DOMContentLoaded', async () => mainEvent()); // the async keyword means we can make API requests
   
